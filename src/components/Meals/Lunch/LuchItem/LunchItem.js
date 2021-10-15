@@ -5,7 +5,7 @@ const LunchItem = (props) => {
     const { title, price, description, img } = props.item;
     return (
         <Col>
-            <Card className="border-0 shadow  mb-5 bg-body rounded h-100 w-75 mx-auto">
+            <Card className="item-card-Style mb-5 h-100 w-75 mx-auto">
                 <Card.Img variant="top" src={img} className="w-50 mx-auto mt-3 mb-3" />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>

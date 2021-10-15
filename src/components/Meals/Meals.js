@@ -25,6 +25,7 @@ const Meals = () => {
                     </Route>
                 </Switch>
             </Router>
+            <button type="button" class="btn btn-danger m-5" disabled>Check Out Your Food</button>
         </div>
     );
 };

@@ -1,0 +1,8 @@
+.item-card-Style{
+    border: none;
+    border-radius: 10px;
+}
+.item-card-Style:hover{
+  box-shadow: 1px 1px 30px gray;
+  transition: 0.3s linear;
+}
