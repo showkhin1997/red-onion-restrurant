@@ -1,30 +1,28 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
-import { useState } from 'react';
-import BreakFastItem from '../BreakFastItem/BreakFastItem';
+import LunchItem from '../LuchItem/LunchItem';
 
-const BreakFastItems = () => {
+const LunchItems = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('./breakfastItem.json')
+        fetch('./luchItem.json')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
 
     return (
-        <div id="breakfast">
+        <div id="lunch">
             <Row xs={1} md={3} sm={2} className="g-5 mt-5">
                 {
-                    items.map(item => <BreakFastItem
+                    items.map(item => <LunchItem
                         key={item.id}
                         item={item}
-                    ></BreakFastItem>)
+                    ></LunchItem>)
                 }
             </Row>
         </div>
     );
 };
 
-export default BreakFastItems;
+export default LunchItems;

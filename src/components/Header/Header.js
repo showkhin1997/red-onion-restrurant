@@ -7,7 +7,7 @@ import './Header.css';
 const Header = () => {
     return (
         <>
-            <Navbar bg="black" sticky="top" className="" expand="lg">
+            <Navbar bg="light" sticky="top" className="" expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img

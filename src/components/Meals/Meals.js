@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import BreakFastItems from './BreakFast/BreakFastItems/BreakFastItems';
-import DinnerItems from './Dinner/DinnerItems';
-import LunchItems from './Lunch/LunchItems';
+import DinnerItems from './Dinner/DinnerItems/DinnerItems';
+import LunchItems from './Lunch/LunchItems/LunchItems';
 import MealsHeader from './MealsHeader/MealsHeader';
 
 const Meals = () => {
